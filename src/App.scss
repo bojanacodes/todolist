@@ -10,3 +10,16 @@ body {
 h2 {
   font-size: 30px;
 }
+
+.strikethrough:checked + span {
+  text-decoration: line-through;
+}
+
+.block:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+input[type='checkbox'] {
+  margin-right: .5em
+  } 
+   

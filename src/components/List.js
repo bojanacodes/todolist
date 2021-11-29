@@ -17,21 +17,21 @@ const List = () => {
   }
 
   return <main>
-    <div className="columns">
-      <div className="column">
-        <ul>
+    <div className="columns is-centered">
+      <div className="column block is-half">
+        <ul className="block">
           {Data.map((item, index) => {
-            return <li key={index} >
-              <label className="checkbox">
-                <input type="checkbox" />
-                {item}
+            return <li key={index}>
+              <label className="checkbox block" >
+                <input type="checkbox" className="strikethrough"/>
+                <span>{item}</span>
               </label>
             </li>
           })}
 
         </ul>
-        <input className="input is-primary" type="text" value={userInput} onChange={handleChange} placeholder="Add your task here" />
-        <button className="button is-primary is-outlined" onClick={onSubmit}>Submit</button>
+        <input className="input is-primary block" type="text" value={userInput} onChange={handleChange} placeholder="Add your task here" />
+        <button className="button is-primary is-outlined block" onClick={onSubmit}>Submit</button>
       </div>
     </div>
   </main>
