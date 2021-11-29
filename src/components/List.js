@@ -16,8 +16,8 @@ const List = () => {
     updateUserInput(event.target.value)
   }
 
-  return <main>
-    <div className="columns is-centered">
+  return <main className="is-centered">
+    <div className="columns is-centered is-half">
       <div className="column block is-half">
         <ul className="block">
           {Data.map((item, index) => {
@@ -31,7 +31,7 @@ const List = () => {
 
         </ul>
         <input className="input is-primary block" type="text" value={userInput} onChange={handleChange} placeholder="Add your task here" />
-        <button className="button is-primary is-outlined block" onClick={onSubmit}>Submit</button>
+        <button className="button is-primary block has-text-white" onClick={onSubmit}>Submit</button>
       </div>
     </div>
   </main>
