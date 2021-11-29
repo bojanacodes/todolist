@@ -3,7 +3,18 @@ import Data from './Data.js'
 
 const List = () => {
 
-  
+  const [userInput, updateUserInput] = useState('')
+  const [todoList, updateToDoList] = useState(Data)
+
+  function onSubmit(event) {
+    event.preventDefault()
+    updateToDoList(todoList.push(userInput))
+    updateUserInput('')
+  }
+
+  function handleChange(event) {
+    updateUserInput(event.target.value)
+  }
 
   return <main>
     <div className="columns">
@@ -19,11 +30,11 @@ const List = () => {
           })}
 
         </ul>
-        <input className="input is-primary" type="text" placeholder="Add your task here" />
+        <input className="input is-primary" type="text" value={userInput} onChange={handleChange} placeholder="Add your task here" />
+        <button className="button is-primary is-outlined" onClick={onSubmit}>Submit</button>
       </div>
     </div>
   </main>
-
 
 
 

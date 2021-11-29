@@ -1,5 +1,5 @@
 import React from 'react'
 
 export default function Header() {
-  return <div>To do list app</div>
+  return <h2>To do list app</h2>
 }
