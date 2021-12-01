@@ -1,9 +1,7 @@
-// css style goes here
-
 $primary: #cba92d;
 $text: #89541a;
 $input-color: #89541a;
-$input-hover-color: #554c3d;
+$input-hover-color: #cba92d;
 
 @charset "utf-8";
 @import '../node_modules/bulma';
@@ -35,6 +33,7 @@ h2 {
 input[type='checkbox'] {
   margin-right: .5em
   } 
+
 
 
 
