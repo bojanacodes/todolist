@@ -78,7 +78,6 @@ export default function List() {
   return <main className='is-centered'>
     <div className='columns is-centered is-half'>
       <div className='column block is-half'>
-
         {inputError && <div className='notification is-warning is-light'>
           <button className='delete' onClick={handleDeleteError}></button>
           {inputError}

@@ -1,37 +1,15 @@
-__Renkap Frontend Developer Exercise__
+# To do list app
 
-___This project is using React 17.0 or Greater___
+This is a to do list app made with React. To install dependencies run ```npm i``` and to run locally: ```npm run local```.
 
-To install dependencies
+The app is styled using Bulma.
 
-```npm i```
+There is an input field for the user to write a task to add to the list, which appears below the input and buttons when the user hits the submit button. 
 
-To run project locally
+Each task can be checked when completed (or unchecked again if necessary). There is a button at the end of every task in the list to remove it. Hovering over the task or the delete button changes the colour of the text of the task. 
 
-``` npm run local ```
+The react-csv package will generate a CSV file of the task list. The task data which is stored in a state variable is passed to the CSV component, along with headers. The CSV file will have two columns - one with the task, and one with the task’s status: completed or outstanding.
 
-Create a todo list App
+An error message will pop up if a user tries to add an empty task with no text, or if the user enters a task which is already on the list. 
 
-Requirements
-
-* A single page app
-
-* Add basic responsive style (ideally use the bulma css framework)
-
-* Add an input field to the todo's
-
-* make it possible for the user to add todos without refreshing the page
-
-Bonus:
-
-* Add a button to export all the todos as a CSV file
-
-* You can add unit tests with jest and react testing library
-
-Looking for:
-
-A nice presentation
-
-How well you work with existing structure
-
-Comments were required
+With more time, I would have added tests, and more features such as the ability to edit a task, or the ability to have multiple named to do lists on the page. 
